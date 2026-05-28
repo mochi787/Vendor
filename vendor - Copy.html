@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* استفاده از فونت Vazirmatn یا هر فونت خوانای مشابه */
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #221a00 0%, #000000 100%);
+            overflow: hidden;
+        }
+
+        .glow-text {
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 4rem;
+            color: #fff;
+            text-transform: uppercase;
+            /* افکت درخشش طلایی */
+            text-shadow: 
+                0 0 10px #D4AF37, 
+                0 0 20px #D4AF37, 
+                0 0 40px #D4AF37, 
+                0 0 80px #996515;
+            
+            /* برای براق‌تر شدن */
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            
+            padding: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow-text">وندور پرنسسی وروجک است</div>
+
+</body>
+</html>
